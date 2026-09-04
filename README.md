@@ -1,20 +1,20 @@
 # 🎫 TicketDesk - Ticket Management System
 
-A lightweight, high-performance Ticket Management System built using **FastAPI** and **uv**. It uses an in-memory Python dictionary for storage and provides a responsive, dark-mode Web UI alongside clean REST API routes (`GET`, `POST`, `DELETE`).
+A lightweight, high-performance Ticket Management System built using **FastAPI** and **uv**. It uses local JSON file storage (`tickets.json`) for persistence across server restarts and provides a responsive, dark-mode Web UI alongside clean REST API routes (`GET`, `POST`, `DELETE`).
 
 ---
 
-## Features
+## ✨ Features
 
-- **FastAPI & UV**: Ultra-fast Python backend managed with modern `uv` tooling.
-- **In-Memory Storage**: Simple, zero-setup dictionary-based persistence.
-- **Interactive Web UI**: Modern dark-mode dashboard with real-time stats, live search, and priority badges.
-- **Simple REST API**: Clean endpoints for managing tickets:
+- ⚡ **FastAPI & UV**: Ultra-fast Python backend managed with modern `uv` tooling.
+- 💾 **Local File Storage**: Persistent JSON-based storage (`tickets.json`) with auto-seeding.
+- 🌐 **Interactive Web UI**: Modern dark-mode dashboard with real-time stats, live search, and priority badges.
+- 🛠️ **Simple REST API**: Clean endpoints for managing tickets:
   - `GET /api/tickets` - List all tickets
   - `GET /api/tickets/{id}` - Get ticket details
   - `POST /api/tickets` - Create a new ticket
   - `DELETE /api/tickets/{id}` - Delete a ticket
-- **Interactive API Docs**: Built-in Swagger UI at `/docs`.
+- 📖 **Interactive API Docs**: Built-in Swagger UI at `/docs`.
 
 ---
 

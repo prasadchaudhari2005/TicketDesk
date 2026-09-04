@@ -238,15 +238,19 @@ body {
   left: 1rem;
   top: 50%;
   transform: translateY(-50%);
-  color: var(--text-dark);
+  color: var(--text-muted);
+  pointer-events: none;
+  z-index: 2;
 }
 
-.search-box input {
+.search-box input,
+.search-box input[type="text"],
+#search-input {
   width: 100%;
   background: var(--bg-secondary);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
-  padding: 0.65rem 1rem 0.65rem 2.75rem;
+  padding: 0.7rem 1rem 0.7rem 2.85rem !important;
   color: var(--text-main);
   font-size: 0.9rem;
   outline: none;
@@ -254,7 +258,9 @@ body {
   font-family: inherit;
 }
 
-.search-box input:focus {
+.search-box input:focus,
+.search-box input[type="text"]:focus,
+#search-input:focus {
   border-color: var(--border-focus);
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
 }
